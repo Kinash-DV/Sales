@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5eeaf61-4838-403f-ba5c-1d384739e312">
+  <producedTypes>
+    <refType typeId="82f98a51-54e1-4d61-8dc1-0919f0a7311a" valueTypeId="2d2c06c3-4363-4905-8837-98d4442bb55f"/>
+    <listType typeId="33015683-9b5b-4467-9558-b91f9161a8cc" valueTypeId="020c5a6b-37d4-4f67-8e5c-fcf1003aa95c"/>
+    <managerType typeId="65352a7f-b8bf-4005-895a-d396634ac41b" valueTypeId="7b12e80b-2e5d-497a-bcaf-e73370e76cb9"/>
+  </producedTypes>
+  <name>TypesOfCommodity</name>
+  <synonym>
+    <key>en</key>
+    <value>Types of commodity</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f45bf801-af10-495d-9b93-f9b80dcd52b5">
+    <name>Goods</name>
+    <synonym>
+      <key>en</key>
+      <value>Goods</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="125827ed-0b8d-4405-aa37-d4dd08970868">
+    <name>Services</name>
+    <synonym>
+      <key>en</key>
+      <value>Services</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

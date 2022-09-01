@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8dfdae0c-9327-4442-971f-34e96ff2e11c">
+  <name>Trade</name>
+  <synonym>
+    <key>en</key>
+    <value>Trade</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <useOneCommand>true</useOneCommand>
+  <content>Catalog.Commodities</content>
+  <content>Document.SalesOrders</content>
+</mdclass:Subsystem>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df897f1d-af1b-4c44-ad17-0451914301da">
+  <producedTypes>
+    <objectType typeId="8378d7d4-0a3e-452a-b4b8-c38dd94d666f" valueTypeId="6db29000-7a46-4fed-8813-d79c7d6f1e96"/>
+    <refType typeId="d020bd10-b24d-4b9d-b1f6-4402ac6138f8" valueTypeId="3a0b4bb8-518b-40f4-a10e-a58fa0832b42"/>
+    <selectionType typeId="a553fe8a-6cb6-4ef4-87d6-f78fc853d011" valueTypeId="f2f79efa-8072-4d8b-8440-41f82f09d34c"/>
+    <listType typeId="b2e5fa2f-fe78-4a31-bbb2-cf0069f63234" valueTypeId="f8698398-8f54-4856-9e93-d5a634c44667"/>
+    <managerType typeId="1aa9ee5b-6254-460c-ac57-d0efda4073da" valueTypeId="7ff5a265-c4f8-446d-b60f-96afb195ff09"/>
+  </producedTypes>
+  <name>SalesOrders</name>
+  <synonym>
+    <key>en</key>
+    <value>Sales orders</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.SalesOrders.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Sales order</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.SalesOrders.Form.DocumentForm</defaultObjectForm>
+  <posting>Deny</posting>
+  <realTimePosting>Deny</realTimePosting>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="9732780a-a942-4ff2-9bfd-da9bfd961e1a">
+    <name>Total</name>
+    <synonym>
+      <key>en</key>
+      <value>Total</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="03245de1-d2be-4833-85a2-a1e84a8b8e77">
+    <name>DocumentForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="ade0a03f-7348-419f-932e-ce207ee94cf1">
+    <producedTypes>
+      <objectType typeId="9c2718ea-1b36-4106-8cd2-d21872826f47" valueTypeId="2b3ef567-2290-4f91-b4a5-3a6415fbf5e7"/>
+      <rowType typeId="f55ff277-9a7c-4dcd-a088-7a3bca25d5d0" valueTypeId="4e5fb2a6-7100-4a4d-b5f3-3dcc7f9c2671"/>
+    </producedTypes>
+    <name>OrderContent</name>
+    <synonym>
+      <key>en</key>
+      <value>Order content</value>
+    </synonym>
+    <attributes uuid="8759816c-3c94-4ac5-bee1-01651c744570">
+      <name>Commodity</name>
+      <synonym>
+        <key>en</key>
+        <value>Commodity</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Commodities</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ae23b459-2759-49f2-9768-73da49daf210">
+      <name>Quantity</name>
+      <synonym>
+        <key>en</key>
+        <value>Quantity</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4d01511d-53f1-4a89-b741-76e063e04f29">
+      <name>Price</name>
+      <synonym>
+        <key>en</key>
+        <value>Price</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ad802a96-0412-4462-a122-9e531f8f857f">
+      <name>Total</name>
+      <synonym>
+        <key>en</key>
+        <value>Total</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

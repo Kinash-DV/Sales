@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7dfb25fd-c113-4ca2-8626-d47290c41b64">
+  <producedTypes>
+    <objectType typeId="0699944e-4121-4499-8c99-8b5db8a07d61" valueTypeId="bd82ec66-38a4-4516-a7a6-b784af784f9b"/>
+    <refType typeId="df2184d2-8e00-413c-b31d-4ac4a8dfc8e5" valueTypeId="076cca17-c1f5-4432-8ab3-7d041e3b2a53"/>
+    <selectionType typeId="cd011bc6-6803-4b92-8504-9351ffed4afb" valueTypeId="522ced87-567f-4085-81b1-44625638b225"/>
+    <listType typeId="3d41e629-1e96-464d-9941-2cec96fe6699" valueTypeId="ddde0a62-4618-4093-b942-c18a8c90c4ef"/>
+    <managerType typeId="df09b110-2ed4-462e-8b7c-8ceb5fa7ecd6" valueTypeId="51ce5578-4c91-4a4c-98ba-4b152869701c"/>
+  </producedTypes>
+  <name>Commodities</name>
+  <synonym>
+    <key>en</key>
+    <value>Commodities</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Commodities.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Commodities.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>en</key>
+      <value>Folder</value>
+    </synonym>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Commodity</value>
+  </objectPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="da83f692-cd94-49b5-936d-63444d1b17e1">
+    <name>Type</name>
+    <synonym>
+      <key>en</key>
+      <value>Type</value>
+    </synonym>
+    <type>
+      <types>EnumRef.TypesOfCommodity</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
